@@ -1,0 +1,1213 @@
+{
+	"info": {
+		"_postman_id": "1b364438-063f-4b2f-8be8-c82d0363526f",
+		"name": "AIRPORTRIDES CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20764987",
+		"_collection_link": "https://universal-resonance-496786.postman.co/workspace/LITTLE-DRAW~f2d78fd5-ad47-41f1-841f-e883fd8c0f37/collection/20764987-1b364438-063f-4b2f-8be8-c82d0363526f?action=share&source=collection_link&creator=20764987"
+	},
+	"item": [
+		{
+			"name": "Driver",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"C4v9wb7mxO9g3WC96aO4tpEF82b9bcL24ewPZMshELd5PjO9yz\",\r\n    \"driver_no\": \"12309883\",\r\n    \"name\": \"test\",\r\n    \"email\": \"tes123t@gmail.com\",\r\n    \"phone\": \"9345553522\",\r\n    \"password\": \"123456\",\r\n    \"vehicle_type\": \"sedan\",\r\n    \"profile_image_path\": \"\",\r\n    \"address\": \"test\",\r\n    \"commision_value\": \"10\",\r\n    \"driver_booking_percentage\": \"2\",\r\n    \"booking_email\": \"test@gmail.com\",\r\n    \"national_insurance_no\": \"123456\",\r\n    \"vehicle_reg_no\": \"123456\",\r\n    \"vehicle_color\": \"black\",\r\n    \"vehicle_make\": \"test\",\r\n    \"vehicle_model\": \"test\",\r\n    \"number_of_seats\": \"8\",\r\n    \"vehicle_insurance\": \"1\",\r\n    \"vehicle_insurance_expiry\": \"20-10-2024\",\r\n    \"vehicle_license\": \"123456\",\r\n    \"vehicle_license_expiry\": \"20-10-2024\",\r\n    \"pco_license_no\": \"123456\",\r\n    \"pco_license_no_expiry\": \"20-10-2024\",\r\n    \"driver_license_no\": \"123456\",\r\n    \"driver_license_no_expiry\": \"20-10-2024\",\r\n    \"mot_no\": \"123456\",\r\n    \"mot_no_expiry\": \"20-10-2024\",\r\n    \"refresh_time\": \"1\",\r\n    \"before_reminder_time\": \"60\",\r\n    \"start_journey_gaptime\": \"5\",\r\n    \"customer_call\": \"+44 208 111 1104\",\r\n    \"dob\": \"2001-10-20\",\r\n    \"start_date\": \"2023-10-20\",\r\n    \"end_date\": \"2023-10-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}createdriver",
+							"host": [
+								"{{base_url}}createdriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"Mmk4TkEL0oSz8ysk8Gxe0M9cGPSWRMNfIGMpW97Bmia8CW55xb\",\r\n    \"driver_no\": \"12309883\",\r\n    \"name\": \"test\",\r\n    \"email\": \"tes123t@gmail.com\",\r\n    \"phone\": \"9345553522\",\r\n    \"password\": \"123456\",\r\n    \"vehicle_type\": \"sedan\",\r\n    \"profile_image_path\": \"\",\r\n    \"address\": \"test\",\r\n    \"commision_value\": \"10\",\r\n    \"driver_booking_percentage\": \"2\",\r\n    \"booking_email\": \"test@gmail.com\",\r\n    \"national_insurance_no\": \"123456\",\r\n    \"vehicle_reg_no\": \"123456\",\r\n    \"vehicle_color\": \"black\",\r\n    \"vehicle_make\": \"test\",\r\n    \"vehicle_model\": \"test\",\r\n    \"number_of_seats\": \"8\",\r\n    \"vehicle_insurance\": \"1\",\r\n    \"vehicle_insurance_expiry\": \"20-10-2024\",\r\n    \"vehicle_license\": \"123456\",\r\n    \"vehicle_license_expiry\": \"20-10-2024\",\r\n    \"pco_license_no\": \"123456\",\r\n    \"pco_license_no_expiry\": \"20-10-2024\",\r\n    \"driver_license_no\": \"123456\",\r\n    \"driver_license_no_expiry\": \"20-10-2024\",\r\n    \"mot_no\": \"123456\",\r\n    \"mot_no_expiry\": \"20-10-2024\",\r\n    \"refresh_time\": \"1\",\r\n    \"before_reminder_time\": \"60\",\r\n    \"start_journey_gaptime\": \"5\",\r\n    \"customer_call\": \"+44 208 111 1104\",\r\n    \"dob\": \"2001-10-20\",\r\n    \"start_date\": \"2023-10-20\",\r\n    \"end_date\": \"2023-10-20\",\r\n    \"driver_id\": 41\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}updatedriver",
+							"host": [
+								"{{base_url}}updatedriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"Mmk4TkEL0oSz8ysk8Gxe0M9cGPSWRMNfIGMpW97Bmia8CW55xb\",\r\n    \"driver_id\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}editdriver",
+							"host": [
+								"{{base_url}}editdriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"driver_id\": 40\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}deletedriver",
+							"host": [
+								"{{base_url}}deletedriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}driverlist",
+							"host": [
+								"{{base_url}}driverlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"C4v9wb7mxO9g3WC96aO4tpEF82b9bcL24ewPZMshELd5PjO9yz\",\r\n    \"isActive\": \"Inactive\",\r\n    \"driver_id\": 41\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}driverstatus",
+							"host": [
+								"{{base_url}}driverstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"C4v9wb7mxO9g3WC96aO4tpEF82b9bcL24ewPZMshELd5PjO9yz\",\r\n    \"password\": \"09876543\",\r\n    \"driver_id\": 41\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}driverpass",
+							"host": [
+								"{{base_url}}driverpass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"driver_name\": \"test\",\r\n    \"driver_email\": \"test@gmail.com\",\r\n    \"driver_status\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}driverfilter",
+							"host": [
+								"{{base_url}}driverfilter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehichle",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"brand_id\": 2,\r\n    \"model_id\": 2,\r\n    \"name\": \"sedan1\",\r\n    \"passenger\": \"8\",\r\n    \"min\": \"1\",\r\n    \"max\": \"8\",\r\n    \"luggage\": \"2\",\r\n    \"hand_luggage\": \"4\",\r\n    \"no_of_seats\": \"8\",\r\n    \"child\": \"2\",\r\n    \"booster\": \"2\",\r\n    \"order\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}createvehichle",
+							"host": [
+								"{{base_url}}createvehichle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"brand_id\": 2,\r\n    \"model_id\": 1,\r\n    \"name\": \"sedan2\",\r\n    \"passenger\": \"8\",\r\n    \"min\": \"1\",\r\n    \"max\": \"8\",\r\n    \"luggage\": \"2\",\r\n    \"hand_luggage\": \"4\",\r\n    \"no_of_seats\": \"8\",\r\n    \"child\": \"2\",\r\n    \"booster\": \"2\",\r\n    \"order\": \"1\",\r\n    \"fleet_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}updatevehichle",
+							"host": [
+								"{{base_url}}updatevehichle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fleet_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}deletevehichle",
+							"host": [
+								"{{base_url}}deletevehichle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"isActive\": \"Active\",\r\n    \"fleet_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}vehichlestatus",
+							"host": [
+								"{{base_url}}vehichlestatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"S5jANic6ADrrRpgNGpcO7kDp2UV6pSjjsNkk6jNPTd5NDyueIW\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}vehichlelist",
+							"host": [
+								"{{base_url}}vehichlelist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fleet_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}editvehichle",
+							"host": [
+								"{{base_url}}editvehichle"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Access-Control-Allow-Origin",
+								"value": "*/*",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domain\": \"partner1.airportrides.co\",\r\n    \"username\": \"test@gmail.com\",\r\n    \"password\": \"Test@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}login",
+							"host": [
+								"{{base_url}}login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset  Link",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domain\": \"partner.airportrides.co\",\r\n    \"email\": \"developer@cwd.co.in\",\r\n    \"customer\": \"cooltimesv7@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}resetlink",
+							"host": [
+								"{{base_url}}resetlink"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domain\": \"partner.airportrides.co\",\r\n    \"email\": \"developer@cwd.co.in\",\r\n    \"remember_token\": \"vgfHliw2wnTGwe3bRmJ2bn4sGAqdQ72oVJgNbkjED12kgcRS02\",\r\n    \"password\": \"Test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}cn-pass",
+							"host": [
+								"{{base_url}}cn-pass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}destroy-auth",
+							"host": [
+								"{{base_url}}destroy-auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Extras",
+			"item": [
+				{
+					"name": "Car Brands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"Mmk4TkEL0oSz8ysk8Gxe0M9cGPSWRMNfIGMpW97Bmia8CW55xb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}brands",
+							"host": [
+								"{{base_url}}brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Car Models",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"Mmk4TkEL0oSz8ysk8Gxe0M9cGPSWRMNfIGMpW97Bmia8CW55xb\",\r\n    \"brand\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}models",
+							"host": [
+								"{{base_url}}models"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Distance & Duration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"from\": \"Hilton London Tower Bridge, More London Place, Tooley Street, London, UK - SE1 2BY\",\r\n    \"to\": \"DoubleTree by Hilton London - Tower of London, Pepys Street, London, UK - EC3N 4AF\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}distance",
+							"host": [
+								"{{base_url}}distance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Locations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"search\": \"Hilton Tower Bridge\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}getlocation",
+							"host": [
+								"{{base_url}}getlocation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Airports",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"airport\": \"Herat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}airports",
+							"host": [
+								"{{base_url}}airports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Overwrite DB Access",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dbkey\": \"test123\",\r\n    \"dbname\": \"test\",\r\n    \"dbhost\": \"1231\",\r\n    \"dbport\": \"3306\",\r\n    \"dbuser\": \"airport\",\r\n    \"dbpass\": \"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}overwrite",
+							"host": [
+								"{{base_url}}overwrite"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employer",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"first_name\": \"test\",\r\n    \"employee_type\": \"test\",\r\n    \"email\": \"testemp1@gmail.com\",\r\n    \"phone\": \"9345553522\",\r\n    \"password\": \"12345678\",\r\n    \"is_admin\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}createemployer",
+							"host": [
+								"{{base_url}}createemployer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"edit_first_name\": \"test1\",\r\n    \"edit_employee_type\": \"test123\",\r\n    \"edit_email\": \"testemp123@gmail.com\",\r\n    \"edit_phone\": \"9345553522\",\r\n    \"edit_is_admin\": 1,\r\n    \"edit_employee_id\": 2,\r\n    \"edit_user_id\": 14\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}updateemployer",
+							"host": [
+								"{{base_url}}updateemployer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"emp_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}deleteemployer",
+							"host": [
+								"{{base_url}}deleteemployer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"emp_id\": 2,\r\n    \"isActive\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}employerstatus",
+							"host": [
+								"{{base_url}}employerstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"password\": \"09876543\",\r\n    \"emp_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}employerpass",
+							"host": [
+								"{{base_url}}employerpass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}employerlist",
+							"host": [
+								"{{base_url}}employerlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"emp_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}editemployer",
+							"host": [
+								"{{base_url}}editemployer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"journey_type\": \"Return\",\r\n    \"client_name\": \"test\",\r\n    \"client_email\": \"test@gmail.com\",\r\n    \"client_mobile\": \"88789898988\",\r\n    \"client_id\": \"12\",\r\n    \"booking_date\": \"04-09-2023\",\r\n    \"car_type\": \"sedan\",\r\n    \"passenger_count\": \"4\",\r\n    \"luggage_count\": \"1\",\r\n    \"hand_luggage_count\": \"1\",\r\n    \"child_seat_count\": \"1\",\r\n    \"baby_seat_1\": \"1\",\r\n    \"baby_seat_2\": \"1\",\r\n    \"baby_seat_3\": \"1\",\r\n    \"from_place_id\": \"1\",\r\n    \"to_place_id\": \"2\",\r\n    \"one_way_pick_up\": \"heathrow\",\r\n    \"one_way_drop_off\": \"gatwick\",\r\n    \"one_way_from_lati\": \"0.34233443\",\r\n    \"one_way_from_longi\": \"-0.343443\",\r\n    \"one_way_to_lati\": \"1.6455454\",\r\n    \"one_way_to_longi\": \"-1.983945\",\r\n    \"one_way_pickup_date\": \"04-09-2023\",\r\n    \"one_way_pickup_time\": \"11:00\",\r\n    \"one_way_pickup_address\": \"heathrow\",\r\n    \"one_way_dropoff_address\": \"gatwick\",\r\n    \"is_airport_or_ship_one_way\": \"1\",\r\n    \"one_way_flight_number\": \"132232\",\r\n    \"one_way_flight_pickup_time\": \"09:00\",\r\n    \"one_way_dest_ship_name\": \"test\",\r\n    \"one_way_payment_status\": \"test\",\r\n    \"one_way_order_status\": \"Pending\",\r\n    \"one_way_payment_method\": \"test\",\r\n    \"one_way_distance\": \"8\",\r\n    \"one_way_travel_time\": \"1\",\r\n    \"one_way_total_cost\": \"100\",\r\n    \"one_way_extra_cost\": \"10\",\r\n    \"one_way_actual_amount\": \"110\",\r\n    \"one_way_special_day_percentage\": \"0\",\r\n    \"pickup_points_one_way\": \"\",\r\n    \"pickup_location\": \"\",\r\n    \"one_way_message\": \"adfdsf\",\r\n    \"one_way_remarks\": \"dsfsdfsdf\",\r\n    \"one_way_payment_message\": \"sdfsdf\",\r\n    \"one_way_ref_no\": \"3214134\",\r\n    \"return_pick_up\": \"gatwick\",\r\n    \"return_drop_off\": \"heathrow\",\r\n    \"return_from_lati\": \"1.345454\",\r\n    \"return_from_longi\": \"-1.079883\",\r\n    \"return_to_lati\": \"0.242334\",\r\n    \"return_to_longi\": \"-0.892344\",\r\n    \"return_pickup_date\": \"04-09-2023\",\r\n    \"return_pickup_time\": \"12:00\",\r\n    \"return_pickup_address\": \"gatwick\",\r\n    \"return_dropoff_address\": \"heathrow\",\r\n    \"is_airport_or_ship_return\": \"1\",\r\n    \"return_flight_number\": \"234234\",\r\n    \"return_flight_pickup_time\": \"234234\",\r\n    \"return_payment_status\": \"sdafdsf\",\r\n    \"return_order_status\": \"Pending\",\r\n    \"return_payment_method\": \"test1\",\r\n    \"return_distance\": \"8\",\r\n    \"return_travel_time\": \"1\",\r\n    \"return_total_cost\": \"100\",\r\n    \"return_extra_cost\": \"10\",\r\n    \"return_actual_amount\": \"110\",\r\n    \"return_special_day_percentage\": \"0\",\r\n    \"return_message\": \"sdfsad\",\r\n    \"return_remarks\": \"dsfsdf\",\r\n    \"return_payment_message\": \"sdfsd\",\r\n    \"return_ref_no\": \"sadfasd\",\r\n    \"is_multi_booking_required_return\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}createbooking",
+							"host": [
+								"{{base_url}}createbooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"journey_type\": \"Return\",\r\n    \"client_name\": \"test123\",\r\n    \"client_email\": \"test@gmail.com\",\r\n    \"client_mobile\": \"88789898988\",\r\n    \"client_id\": \"12\",\r\n    \"booking_date\": \"04-09-2023\",\r\n    \"car_type\": \"sedan\",\r\n    \"passenger_count\": \"4\",\r\n    \"luggage_count\": \"1\",\r\n    \"hand_luggage_count\": \"1\",\r\n    \"child_seat_count\": \"1\",\r\n    \"baby_seat_1\": \"1\",\r\n    \"baby_seat_2\": \"1\",\r\n    \"baby_seat_3\": \"1\",\r\n    \"from_place_id\": \"1\",\r\n    \"to_place_id\": \"2\",\r\n    \"one_way_pick_up\": \"test123\",\r\n    \"one_way_drop_off\": \"test\",\r\n    \"one_way_from_lati\": \"0.34233443\",\r\n    \"one_way_from_longi\": \"-0.343443\",\r\n    \"one_way_to_lati\": \"1.6455454\",\r\n    \"one_way_to_longi\": \"-1.983945\",\r\n    \"one_way_pickup_date\": \"04-09-2023\",\r\n    \"one_way_pickup_time\": \"11:00\",\r\n    \"one_way_pickup_address\": \"test\",\r\n    \"one_way_dropoff_address\": \"test\",\r\n    \"is_airport_or_ship_one_way\": \"1\",\r\n    \"one_way_flight_number\": \"132232\",\r\n    \"one_way_flight_pickup_time\": \"09:00\",\r\n    \"one_way_dest_ship_name\": \"test\",\r\n    \"one_way_payment_status\": \"test\",\r\n    \"one_way_order_status\": \"pending\",\r\n    \"one_way_payment_method\": \"test\",\r\n    \"one_way_distance\": \"8\",\r\n    \"one_way_travel_time\": \"1\",\r\n    \"one_way_total_cost\": \"100\",\r\n    \"one_way_extra_cost\": \"10\",\r\n    \"one_way_actual_amount\": \"110\",\r\n    \"one_way_special_day_percentage\": \"0\",\r\n    \"pickup_points_one_way\": \"\",\r\n    \"pickup_location\": \"\",\r\n    \"one_way_message\": \"adfdsf\",\r\n    \"one_way_remarks\": \"dsfsdfsdf\",\r\n    \"one_way_payment_message\": \"sdfsdf\",\r\n    \"one_way_ref_no\": \"3214134\",\r\n    \"return_pick_up\": \"test10988\",\r\n    \"return_drop_off\": \"test1\",\r\n    \"return_from_lati\": \"1.345454\",\r\n    \"return_from_longi\": \"-1.079883\",\r\n    \"return_to_lati\": \"0.242334\",\r\n    \"return_to_longi\": \"-0.892344\",\r\n    \"return_pickup_date\": \"04-09-2023\",\r\n    \"return_pickup_time\": \"12:00\",\r\n    \"return_pickup_address\": \"test1\",\r\n    \"return_dropoff_address\": \"test1\",\r\n    \"is_airport_or_ship_return\": \"1\",\r\n    \"return_flight_number\": \"234234\",\r\n    \"return_flight_pickup_time\": \"234234\",\r\n    \"return_payment_status\": \"sdafdsf\",\r\n    \"return_order_status\": \"pending\",\r\n    \"return_payment_method\": \"test1\",\r\n    \"return_distance\": \"8\",\r\n    \"return_travel_time\": \"1\",\r\n    \"return_total_cost\": \"100\",\r\n    \"return_extra_cost\": \"10\",\r\n    \"return_actual_amount\": \"110\",\r\n    \"return_special_day_percentage\": \"0\",\r\n    \"return_message\": \"sdfsad\",\r\n    \"return_remarks\": \"dsfsdf\",\r\n    \"return_payment_message\": \"sdfsd\",\r\n    \"return_ref_no\": \"sadfasd\",\r\n    \"one_way_id\": 2,\r\n    \"return_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}updatebooking",
+							"host": [
+								"{{base_url}}updatebooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"booking_id\": 4,\r\n    \"status\": \"confirmed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}bookingstatus",
+							"host": [
+								"{{base_url}}bookingstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"booking_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}deletebooking",
+							"host": [
+								"{{base_url}}deletebooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Assign Or Remove Driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"booking_id\": 4,\r\n    \"status\": \"Confirmed\",\r\n    \"driver_id\": 2,\r\n    \"driver_amount\": \"10\",\r\n    \"job_no\": \"EC1\",\r\n    \"total\": \"110\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}assigndriver",
+							"host": [
+								"{{base_url}}assigndriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"order_status\": \"pending\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}bookinglist",
+							"host": [
+								"{{base_url}}bookinglist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"driver_name_filter\": \"\",\r\n    \"job_no_filter\": \"\",\r\n    \"pickup_date_from\": \"\",\r\n    \"pickup_date_to\": \"\",\r\n    \"booking_date_from\": \"04-09-2023\",\r\n    \"booking_date_to\": \"06-09-2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}bookingfilter",
+							"host": [
+								"{{base_url}}bookingfilter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multi Booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"job_id\": \"ARP2\",\r\n    \"valid_from\": \"heathrow\",\r\n    \"valid_to\": \"gatwick\",\r\n    \"pickup_date\" : [\r\n            \"04-09-2023\",\r\n            \"04-09-2023\"\r\n    ],\r\n    \"pickup_time\": [\r\n        \"09:00\",\r\n        \"10:00\"\r\n    ],\r\n    \"pickup_location\": [\r\n        \"heathrow\",\r\n        \"gatwick\"\r\n    ],\r\n    \"multi_fplace_id\": [\r\n        \"2\",\r\n        \"1\"\r\n    ],\r\n    \"multi_toplace_id\": [\r\n        \"1\",\r\n        \"2\"\r\n    ],\r\n    \"dropoff_location\": [\r\n        \"gatwick\",\r\n        \"heathrow\"\r\n    ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}multibooking",
+							"host": [
+								"{{base_url}}multibooking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"book_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}editbooking",
+							"host": [
+								"{{base_url}}editbooking"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fares",
+			"item": [
+				{
+					"name": "Range Fare",
+					"item": [
+						{
+							"name": "Create Range Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"start\": 0,\r\n    \"end\": 5,\r\n    \"fare\": 10.01,\r\n    \"veh_id\": [1,3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}create_rfare",
+									"host": [
+										"{{base_url}}create_rfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Range Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"start\": 0,\r\n    \"end\": 4,\r\n    \"fare\": 10.02,\r\n    \"veh_id\": 1,\r\n    \"fare_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}update_rfare",
+									"host": [
+										"{{base_url}}update_rfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Range Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fare_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}edit_rfare",
+									"host": [
+										"{{base_url}}edit_rfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Range Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fare_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}delete_rfare",
+									"host": [
+										"{{base_url}}delete_rfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Range Fare List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}rfare_list",
+									"host": [
+										"{{base_url}}rfare_list"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Radius Fare",
+					"item": [
+						{
+							"name": "Create Radius Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"radius\": 5,\r\n    \"location_name\": \"gatwick\",\r\n    \"fare\": 100.50,\r\n    \"latitude\": \"1.00788498\",\r\n    \"longitude\": \"-1.09809023\",\r\n    \"veh_id\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}create_rsfare",
+									"host": [
+										"{{base_url}}create_rsfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Radius Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"radius\": 10,\r\n    \"location_name\": \"Gatwick\",\r\n    \"fare\": 100.55,\r\n    \"fare_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}update_rsfare",
+									"host": [
+										"{{base_url}}update_rsfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Radius Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fare_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}edit_rsfare",
+									"host": [
+										"{{base_url}}edit_rsfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Destroy Radius Fare",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\",\r\n    \"fare_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}destroy_rsfare",
+									"host": [
+										"{{base_url}}destroy_rsfare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Radius Fare List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"3k93461CRQhlFIBmmkrYFV3TWrm6eeLMf0DRvvea1lMgidNuQu\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}rsfare_list",
+									"host": [
+										"{{base_url}}rsfare_list"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

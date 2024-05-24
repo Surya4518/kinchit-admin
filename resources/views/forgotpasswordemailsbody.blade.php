@@ -1,0 +1,1 @@
+<p><b>Dear {{$userdisplayname}}</b></p> <p>We are sending you this email because you requested a password reset. kindly find the new password.</p><p><b>New Password: {{$newpwd}}</b></p><p><b>Regards,<br>Kinchitkaram Trust<br>Admin.</b></p>

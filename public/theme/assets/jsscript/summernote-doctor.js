@@ -1,0 +1,1 @@
+jQuery((function(e){"use strict";$(document).ready((function(){$(".summernote").summernote(),setTimeout((function(){$(".background-success").fadeOut("slow")}),1e4)}))}));
